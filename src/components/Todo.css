@@ -1,0 +1,37 @@
+.container {
+  width: 50vw;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.4rem #b8b4b4;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}

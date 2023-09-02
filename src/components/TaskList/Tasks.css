@@ -1,0 +1,70 @@
+.tasks {
+  background-color: white;
+  height: 50vh;
+  list-style-type: none;
+  padding: 2rem 2rem;
+
+  overflow: auto;
+}
+
+.tasks li {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem 0.3rem #e6e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.tasks .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.tasks i {
+  background-color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.tasks input {
+  font-size: 1.6rem;
+  font-family: 'Courier New', Courier, monospace;
+  outline: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
