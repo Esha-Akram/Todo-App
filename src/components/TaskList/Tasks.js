@@ -6,12 +6,15 @@ const Tasks = (props) => {
             {props.sArray.map((task, taskId) => {
                 return (
                     <li key={taskId}>
-                        {props.editValue.editTaskId === taskId ? (
-                            <input type='text' value={props.editValue.editValue} onChange={(event) => props.eHandle(event, taskId)} />
-                        ) : (
-                            task
-                        )
-                        }
+                        <i className={props.selectTask.includes(taskId) ? "fa fa-check-square" : "fa fa-square-o"} onClick={() => props.complete(taskId)} ></i>
+                        <span className={props.selectTask.includes(taskId) ? "completed" : ""} >
+                            {props.editValue.editTaskId === taskId ? (
+                                <input type='text' value={props.editValue.editValue} onChange={(event) => props.eHandle(event, taskId)} />
+                            ) : (
+                                task
+                            )
+                            }
+                        </span>
                         <div className='icons'>
                             {props.editValue.editTaskId === taskId ? (
                                 <i className="fa fa-save" onClick={() => props.saveEdit(taskId)}></i>
